@@ -1,14 +1,19 @@
 {
   "name": "npm_useful_js",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dunkman32/useful_js"
+  },
   "keywords": [
     "npm",
-    "npm-useful-js"
+    "npm-useful-js",
+    "JS"
   ],
   "author": "nozza",
   "license": "ISC"
