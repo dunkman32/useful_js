@@ -1,3 +1,5 @@
+const bcrypt = require('bcrypt');
+
 const isSeven = number => parseInt(number) === 7;
 
 const print = message => console.log(message);
@@ -14,6 +16,9 @@ const print99Snowflake = () => {
     for (var i = 0; i < 99; ++i)
         print('*')
 }
+
+const hashPassword = (password, salt) => bcrypt.hashSync(password, salt)
+const checkPassword = (password, hash) => bcrypt.compareSync(password, hash)
 
 
 const print99SnowflakeHorizontal = () =>
@@ -39,4 +44,6 @@ module.exports = {
     print99Snowflake,
     print99SnowflakeHorizontal,
     tryCatch,
+    checkPassword,
+    hashPassword,
 }

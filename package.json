@@ -16,5 +16,8 @@
     "JS"
   ],
   "author": "nozza",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6"
+  }
 }

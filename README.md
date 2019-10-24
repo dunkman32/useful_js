@@ -9,6 +9,8 @@
     const {
         isSeven,
         tryCatch,
+        hashPassword,
+        checkPassword,
         print,
         printTwo,
         isPositive,
@@ -25,6 +27,10 @@
         ...
         return res.send(tmpObjectsArrat);
     }));
+
+    checkPassword(password, user.password) // true or false
+
+    hashPassword(password, salt) // returns bcrypt type
 
     print(isSeven(10)) // false
     print(isSeven(7)) // true
