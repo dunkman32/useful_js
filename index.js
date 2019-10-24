@@ -34,6 +34,10 @@ const tryCatch = callback => async (req, res, next) => {
     }
 };
 
+const returnSuccess = something => 200
+
+const return200 = something => returnSuccess
+
 module.exports = {
     isSeven,
     print,
@@ -46,4 +50,6 @@ module.exports = {
     tryCatch,
     checkPassword,
     hashPassword,
+    returnSuccess,
+    return200
 }

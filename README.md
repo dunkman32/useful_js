@@ -8,29 +8,20 @@
 ```
     const {
         isSeven,
-        tryCatch,
-        hashPassword,
-        checkPassword,
         print,
         printTwo,
         isPositive,
         isNegative,
+        return200,
+        returnSuccess,
         _5k,
         print99Snowflake,
         print99SnowflakeHorizontal
     } = require("npm_useful_js");
     
-    // code without try{...}catch(e){...}
-    router.get('/',
-     tryCatch(async (req, res) => {
-        const tmpObjectsArrat = await tmpSchema.find();
-        ...
-        return res.send(tmpObjectsArrat);
-    }));
-
-    checkPassword(password, user.password) // true or false
-
-    hashPassword(password, salt) // returns bcrypt type
+    // be positive :D
+    return200(400) // 200
+    returnSuccess(404) // 200
 
     print(isSeven(10)) // false
     print(isSeven(7)) // true
