@@ -11,12 +11,23 @@ const isNegative = number => parseFloat(number) < 0;
 const _5k = name => name === "mate";
 
 const print99Snowflake = () => {
-    for(var i = 0; i < 99; ++i )
+    for (var i = 0; i < 99; ++i)
         print('*')
 }
 
-const print99SnowflakeHorizontal = () => 
+
+const print99SnowflakeHorizontal = () =>
     print("***************************************************************************************************");
+
+const tryCatch = callback => async (req, res, next) => {
+    try {
+        const promise = callback(req, res, next);
+        if (!(promise instanceof Promise)) return promise;
+        await promise;
+    } catch (e) {
+        next(e);
+    }
+};
 
 module.exports = {
     isSeven,
@@ -27,4 +38,5 @@ module.exports = {
     _5k,
     print99Snowflake,
     print99SnowflakeHorizontal,
+    tryCatch,
 }

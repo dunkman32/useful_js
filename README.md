@@ -8,6 +8,7 @@
 ```
     const {
         isSeven,
+        tryCatch,
         print,
         printTwo,
         isPositive,
@@ -17,6 +18,14 @@
         print99SnowflakeHorizontal
     } = require("npm_useful_js");
     
+    // code without try{...}catch(e){...}
+    router.get('/',
+     tryCatch(async (req, res) => {
+        const tmpObjectsArrat = await tmpSchema.find();
+        ...
+        return res.send(tmpObjectsArrat);
+    }));
+
     print(isSeven(10)) // false
     print(isSeven(7)) // true
 
