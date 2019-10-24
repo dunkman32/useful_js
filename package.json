@@ -1,6 +1,6 @@
 {
   "name": "npm_useful_js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,5 @@
     "sarcastic"
   ],
   "author": "nozza",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^3.0.6"
-  }
+  "license": "ISC"
 }
