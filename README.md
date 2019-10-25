@@ -3,10 +3,10 @@
   ```sh
   $ npm i --save npm_useful_js
   ```
-# install
+# Join us - make world better!
 ----
 
-Join us - make world better!
+
 
 ## in nodeJS!
 ```sh
