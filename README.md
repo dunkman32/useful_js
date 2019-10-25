@@ -1,11 +1,15 @@
 
 # install
-  ```
+  ```sh
   $ npm i --save npm_useful_js
   ```
+# install
+----
+
+Join us - make world better!
 
 ## in nodeJS!
-```
+```sh
     const {
         isSeven,
         print,
@@ -16,10 +20,12 @@
         returnSuccess,
         _5k,
         print99Snowflake,
-        print99SnowflakeHorizontal
+        print99SnowflakeHorizontal,
+        yourLocalHostAddress,
+        meaningOfRecursion
     } = require("npm_useful_js");
     
-    // be positive :D
+    #  be positive :D
     return200(400) // 200
     returnSuccess(404) // 200
 
@@ -37,4 +43,10 @@
     print99Snowflake() // vertical printing
     print99SnowflakeHorizontal() // Horizontal printing
     
+    # your localhost address :D 
+    yourLocalHostAddress()
+
+    # meaning of recursion [ returns link ]
+    meaningOfRecursion()
+
 ```
